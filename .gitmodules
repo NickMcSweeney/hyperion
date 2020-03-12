@@ -1,0 +1,9 @@
+[submodule "hyperion_msgs"]
+	path = hyperion_msgs
+	url = git@github.com:NickMcSweeney/hyperion_msgs.git
+[submodule "hyperion_detect"]
+	path = hyperion_detect
+	url = git@github.com:NickMcSweeney/hyperion_detect.git
+[submodule "hyperion_predict"]
+	path = hyperion_predict
+	url = git@github.com:NickMcSweeney/hyperion_predict.git
