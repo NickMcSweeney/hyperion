@@ -1,0 +1,36 @@
+# graph hyperion test data
+set terminal lua 
+
+#set multiplot layout 2,2
+set title 'position data'
+plot './output/raw_data.dat' u 2:3, './output/filtered_data.dat' u 2:3
+
+set title 'velocity data'
+plot './output/raw_data.dat' u 4:5, './output/filtered_data.dat' u 4:5
+
+set title 'predictions'
+splot './output/measure.log' u 2:3:6, \
+        './output/predict_5.log' u 2:3:($6+5),\
+        './output/predict_6.log' u 2:3:($6+6),\
+        './output/predict_7.log' u 2:3:($6+7),\
+        './output/predict_8.log' u 2:3:($6+8),\
+        './output/predict_9.log' u 2:3:($6+9),\
+        './output/predict_10.log' u 2:3:($6+10),\
+        './output/predict_11.log' u 2:3:($6+11),\
+        './output/predict_12.log' u 2:3:($6+12),\
+        './output/predict_13.log' u 2:3:($6+13),\
+        './output/predict_14.log' u 2:3:($6+14),\
+        './output/predict_15.log' u 2:3:($6+15),\
+        './output/predict_16.log' u 2:3:($6+16),\
+        './output/predict_17.log' u 2:3:($6+17),\
+        './output/predict_18.log' u 2:3:($6+18),\
+        './output/predict_19.log' u 2:3:($6+19),\
+        './output/predict_20.log' u 2:3:($6+20),\
+        './output/predict_21.log' u 2:3:($6+21),\
+        './output/predict_22.log' u 2:3:($6+22),\
+        './output/predict_23.log' u 2:3:($6+23),\
+        './output/predict_24.log' u 2:3:($6+24),\
+        './output/predict_25.log' u 2:3:($6+25),\
+
+
+#unset multiplot
