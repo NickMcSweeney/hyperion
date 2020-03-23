@@ -2,6 +2,7 @@
 set terminal qt size 1200,1000
 
 set multiplot layout 2,1
+
 set title 'average position error'
 #f(x) = m*x+b
 #fit f(x) './output/data_analysis.dat' u 2:3 via m,b

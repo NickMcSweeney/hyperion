@@ -39,4 +39,14 @@ else
 	pip3 install --upgrade tensorflow
 fi
 
+
+keras=$(python3 -c 'import keras as keras; print(keras.__version__)');
+
+if [ ! -z "${keras##*[!0-9]*}" ]; then
+	echo "keras installed";
+else
+	echo "keras not installed";
+	pip3 install --upgrade keras
+fi
+
 echo "env all setup with tensorflow. run 'source .venv/bin/activate' from this location to start the virtual environemnt.

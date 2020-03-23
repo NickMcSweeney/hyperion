@@ -28,3 +28,8 @@ once the collection has run notes can be added to the file by answering the prom
 ## Evaluation
 there is a evaluation file that gived a detailed output of prediction data and it's acuracy, both on a per trial basis and on average.
 there is also a *gnuplot* script for creating plots of the data.
+
+## Python LSTM
+the model for the python RNN model was created in google colab, the code can be seen here [motion_prediction_lstm](https://colab.research.google.com/drive/1A14wzmCaVUjgYTpORXq5oht9mt9DAPbk)
+this model was trained on part of the atc shopping center tracks. and implemented to enhance the KF prediction.
+
